@@ -1,8 +1,4 @@
-# jaydon
-
-[![tag](https://img.shields.io/github/tag/ozgrozer/jaydon.svg?style=flat-square)](https://github.com/ozgrozer/jaydon/tags)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/ozgrozer/jaydon/blob/master/license)
-[![Follow new releases](https://app.releasly.co/assets/badges/badge-green.svg)](https://app.releasly.co/sites/ozgrozer/jaydon)
+# Jaydon
 
 Nginx Control Panel
 
@@ -13,13 +9,13 @@ Nginx Control Panel
 Ubuntu v22
 
 ```
-curl -L https://raw.githubusercontent.com/ozgrozer/jaydon/master/install22.sh | bash
+curl -L https://raw.githubusercontent.com/drylikov/jaydon/master/install22.sh | bash
 ```
 
 Ubuntu v18
 
 ```
-curl -L https://raw.githubusercontent.com/ozgrozer/jaydon/master/install18.sh | bash
+curl -L https://raw.githubusercontent.com/drylikov/jaydon/master/install18.sh | bash
 ```
 
 ## Before Installation
@@ -116,7 +112,7 @@ If you have all the dependencies above now you can install Jaydon.
 
 ```
 # Clone Git repository
-git clone https://github.com/ozgrozer/jaydon.git && cd jaydon
+git clone https://github.com/drylikov/jaydon.git && cd jaydon
 
 # Install dependencies
 yarn install
@@ -289,11 +285,3 @@ axios
 - [ ] Logs
 - [ ] Monitor
 - [ ] API
-
-## Contribution
-
-Feel free to contribute. Open a new [issue](https://github.com/ozgrozer/jaydon/issues), or make a [pull request](https://github.com/ozgrozer/jaydon/pulls).
-
-## License
-
-[MIT](license)
