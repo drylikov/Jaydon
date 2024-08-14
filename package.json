@@ -1,0 +1,55 @@
+{
+  "name": "jaydon",
+  "version": "0.8.1",
+  "description": "Nginx Control Panel",
+  "license": "MIT",
+  "keywords": [
+    "nginx",
+    "control-panel"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozgrozer/jaydon.git"
+  },
+  "author": {
+    "name": "Ozgur",
+    "email": "ozgr@live.com",
+    "url": "https://github.com/ozgrozer"
+  },
+  "scripts": {
+    "firstRun": "node ./src/backend/firstRun.js",
+    "server": "node ./src/backend/server.js",
+    "start": "parcel ./src/frontend/js/App.jsx --out-dir ./dist --public-url / --port 1147 --hmr-port 1150",
+    "build": "parcel build ./src/frontend/js/App.jsx --out-dir ./dist --public-url / --no-source-maps",
+    "postbuild": "npm run copyImages",
+    "copyImages": "cp -r ./src/frontend/img ./dist/",
+    "icomoon": "node ./src/scripts/icomoon.js"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-root-import": "^6.6.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "bootstrap": "^4.5.3",
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.2.0",
+    "mongoose": "^5.10.11",
+    "morgan": "^1.10.0",
+    "parcel-bundler": "1.11.0",
+    "public-ip": "^4.0.2",
+    "pug": "^3.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-notifications-component": "^2.4.1",
+    "react-router-dom": "^5.2.0",
+    "rfv": "^0.0.36",
+    "sass": "^1.28.0",
+    "standard": "^16.0.1"
+  }
+}

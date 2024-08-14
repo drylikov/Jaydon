@@ -1,0 +1,32 @@
+body {
+  background-color: $gray1;
+}
+
+a {
+  text-decoration: none !important;
+  transition: all .15s ease-in-out;
+  &:hover {
+    color: inherit;
+  }
+}
+
+body, a {
+  color: $gray-900;
+  font-size: $fontSize;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.react-notification-root {
+  .notification-message {
+    padding: 4px;
+    font-size: $fontSize;
+  }
+}
+
+.custom-control-label::before,
+.custom-control-label::after {
+  top: 6px;
+}

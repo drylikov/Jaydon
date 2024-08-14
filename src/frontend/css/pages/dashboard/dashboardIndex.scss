@@ -1,0 +1,106 @@
+@import './newRecord';
+@import './listRecords';
+@import './editAndNewRecord';
+
+#dashboard {
+  .box1 {
+    padding: $mt1;
+    background-color: #fff;
+    border-radius: $borderRadius;
+    box-shadow: 0 0 5px 0 $gray-200;
+  }
+  .container1 {
+    width: 400px;
+  }
+
+  .link {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  #menu  {
+    float: left;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    width: $menuDesktopWidth;
+
+    .menuLinks {
+      width: 100%;
+      overflow-x: auto;
+      position: relative;
+      height: calc(100% - 50px);
+      padding: $menuTopPadding 0;
+      -webkit-overflow-scrolling: touch;
+
+      a {
+        display: block;
+        color: $gray-500;
+        line-height: $buttonHeight1;
+        padding: 0 ($buttonHeight1 / 1.5);
+        &:hover, &.active {
+          color: $gray-600;
+          background-color: $gray-100;
+        }
+      }
+    }
+
+    .menuBottom {
+      width: 100%;
+      height: 50px;
+      line-height: 20px;
+      position: relative;
+      padding: 15px ($buttonHeight1 / 1.5);
+      &:after {
+        content: '';
+        clear: both;
+        display: table;
+      }
+
+      a {
+        font-size: 14px;
+        color: $gray-500;
+      }
+
+      .versionLink {
+        float: left;
+      }
+
+      .signOutLink {
+        float: right;
+      }
+    }
+  }
+
+  #main  {
+    float: left;
+    background-color: $gray-100;
+    margin-left: $menuDesktopWidth;
+    width: calc(100% - #{$menuDesktopWidth});
+    padding: $menuTopPadding ($menuTopPadding * 1.5);
+
+    .header {
+      &:after {
+        content: '';
+        clear: both;
+        display: table;
+      }
+
+      h1 {
+        float: left;
+        height: $buttonHeight1;
+        line-height: $buttonHeight1;
+      }
+
+      .btn {
+        float: right;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+
+    .content {
+      margin-top: $mt1;
+    }
+  }
+}

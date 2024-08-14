@@ -1,0 +1,10 @@
+doctype html
+html(lang='en')
+  head
+    title #{defaults.activePageTitle}
+    link(rel='stylesheet', href='/App.css')
+    link(rel='icon', type='image/png' href='/img/favicon.png')
+  body
+    #root
+    script!= 'window.defaults = ' + JSON.stringify(defaults) + ';'
+    script(src='/App.js')
